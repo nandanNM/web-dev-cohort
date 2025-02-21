@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculater</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      }
+
+      .card {
+        background: white;
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        max-width: 400px;
+      }
+
+      .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      input {
+        padding: 0.8rem;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+      }
+
+      input:focus {
+        outline: none;
+        border-color: #4a90e2;
+      }
+
+      button {
+        padding: 0.8rem;
+        background: #4a90e2;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      button:hover {
+        background: #357abd;
+      }
+
+      .result-box {
+        text-align: center;
+        background: #f8f9fa;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+      }
+
+      .result {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-top: 0.5rem;
+      }
+
+      .data {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+
+      .data div {
+        background: #f8f9fa;
+        padding: 1rem;
+        border-radius: 8px;
+        text-align: center;
+      }
+      .data {
+        color: #fff;
+      }
+
+      .data p {
+        margin: 0.5rem 0;
+        color: #fff;
+      }
+
+      .data p:first-child {
+        font-weight: 600;
+        color: #2c3e50;
+      }
+
+      /* Add some spacing between elements */
+      div:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+      .data div:first-child {
+        background-color: #ffb133;
+      }
+      .data div:nth-child(2) {
+        background-color: #30a231;
+      }
+      .data div:nth-child(3) {
+        background-color: #e86024;
+      }
+      .data div:last-child {
+        background-color: #e11818;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="inputs">
+        <input
+          type="number"
+          placeholder="your Weight in kg"
+          required
+          id="weight" />
+        <input
+          type="number"
+          placeholder="your Height in cm"
+          required
+          id="height" />
+        <button id="calculate">Calculate</button>
+      </div>
+      <div class="result-box">
+        <div>Yor BMI:</div>
+        <div class="result">00.00</div>
+      </div>
+      <div class="data">
+        <div>
+          <p>Under weight</p>
+          <p><18.5</p>
+        </div>
+        <div>
+          <p>Normal weight</p>
+          <p>18.5-25</p>
+        </div>
+        <div>
+          <p>Over weight</p>
+          <p>25-30</p>
+        </div>
+        <div>
+          <p>Obese</p>
+          <p>>30</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
