@@ -4,6 +4,14 @@ Welcome to my assignments repository! Here, you'll find solutions to challenges 
 
 [Check out my social media](https://twitter.com/coder_nandan) for updates on my journey to building a solid foundation in programming.
 
+# Assignments Repository
+
+Welcome to my assignments repository! Here, you'll find solutions to challenges from various programming topics. This repository is organized by weeks, each focusing on different aspects of web development and programming.
+
+[Check out my social media](https://twitter.com/coder_nandan) for updates on my journey to building a solid foundation in programming.
+
+[Read my blogs](https://how-the-internet-work.hashnode.dev/) for more insights and knowledge sharing.
+
 ## Table of Contents
 
 - [Week 1: CSS Challenges](./assignments/week-1/README.md)
@@ -72,9 +80,3 @@ Check out the projects:
 
 - [BMI Calculator](./projects/bmi-calculater/)
 - [Review Form](./projects/review-form/)
-
-## Contributing
-
-Contributions are always welcome! See [CONTRIBUTING.md](../CONTRIBUTING.md) for ways to get started.
-
-Feel free to explore the folders and files to reinforce your learning. Happy coding!
